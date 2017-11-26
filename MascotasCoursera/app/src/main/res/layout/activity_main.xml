@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.josep.mascotascoursera.MainActivity"
-    android:orientation="vertical"
     >
+
     <include
         android:id="@+id/miToolbar"
         layout="@layout/toolbar"
-        >
-    </include>
+        ></include>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyMascotas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/miToolbar" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FloatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pata">
+    </android.support.design.widget.FloatingActionButton>
+</RelativeLayout>
